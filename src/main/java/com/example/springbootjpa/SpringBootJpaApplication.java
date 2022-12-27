@@ -16,6 +16,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import javax.persistence.Tuple;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.nio.file.Files;
@@ -42,6 +43,13 @@ public class SpringBootJpaApplication implements CommandLineRunner
 
     @Override
     public void run(String... args) throws Exception {
+
+       // String abc="AA";
+       // Tuple t = new Tuple (a, b, c);
+
+
+
+
 
         Course course = repository.findById(10001L);
         logger.info("course 10001 {}", course);
